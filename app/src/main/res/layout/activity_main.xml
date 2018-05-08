@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <Button
+        android:id="@+id/currentLoc"
+        android:text="GetCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getUserLocation"
+        android:layout_below="@id/frame1"/>
+
+    <Button
+        android:id="@+id/currentLocMarker"
+        android:text="setCurrentLocationMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setCurrentLocationMarker"
+        android:layout_below="@id/frame1"
+        android:layout_toRightOf="@id/currentLoc"/>
+
+    <Button
+        android:id="@+id/infowindow"
+        android:text="setInfoWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setInfoWindow"
+        android:layout_below="@id/currentLoc"/>
+
+    <Button
+        android:id="@+id/draw"
+        android:text="Directions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getDirections"
+        android:layout_below="@id/currentLocMarker"
+        android:layout_toRightOf="@id/infowindow"/>
+
+    <Button
+        android:id="@+id/places"
+        android:text="Nearby Places"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getNearbyPlaces"
+        android:layout_below="@id/infowindow" />
+
+</RelativeLayout>

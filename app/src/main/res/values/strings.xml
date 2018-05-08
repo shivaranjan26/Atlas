@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Atlas</string>
+    <string name="map_key">Your Maps Key</string>
+</resources>
