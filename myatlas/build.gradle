@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group='edmt.dev'
-version='5.0'
+version='6.0'
 
 android {
     compileSdkVersion 27
