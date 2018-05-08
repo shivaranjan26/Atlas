@@ -1,4 +1,5 @@
 Welcome to Atlas
+
 This component will help you generate the Google Map v2 and also lets you use all the features with simple getter and setter methods.
 
 Adding library to project :
