@@ -244,6 +244,22 @@ public class AtlasFragment extends Fragment {
         }
     }
 
+    public void zoomToLocation(float zoom, float fixedZoom, LatLng latlng) {
+        float zoomLevel = googleMap.getCameraPosition().zoom;
+
+        if (isGpsAndNetworkEnabled()) {
+            LatLng latLong = latlng;
+            CameraUpdate yourLocation;
+            if (fixedZoom > 0) {
+                yourLocation = CameraUpdateFactory.newLatLngZoom(latLong, fixedZoom);
+            } else {
+                yourLocation = CameraUpdateFactory.newLatLngZoom(latLong, zoomLevel + zoom);
+            }
+
+            googleMap.animateCamera(yourLocation);
+        }
+    }
+
     public void setCurrentLocationMarker(Drawable image, String title, String msg) {
         if (isGpsAndNetworkEnabled()) {
             Location location = getLastKnownLocation();
