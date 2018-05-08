@@ -118,7 +118,7 @@ public class AtlasUtils {
     public static final int DIRECTIONS_MODE_WALKING = 1;
     public static final int DIRECTIONS_MODE_TRANSIT = 2;
 
-    public static boolean HIDE_MARKER = false;
+    public static boolean HIDE_INFO_WINDOW = false;
     public static boolean ENABLE_POLYLINE_CLICK = true;
 
 

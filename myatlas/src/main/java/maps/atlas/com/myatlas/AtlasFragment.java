@@ -93,7 +93,7 @@ public class AtlasFragment extends Fragment {
                         public boolean onMarkerClick(Marker marker) {
                             //Allow user to customise the marker click action
                             callbacks.onMarkerClicked(marker);
-                            return AtlasUtils.HIDE_MARKER;
+                            return AtlasUtils.HIDE_INFO_WINDOW;
                         }
                     });
 
