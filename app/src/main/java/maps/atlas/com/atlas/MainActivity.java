@@ -45,7 +45,7 @@ public class MainActivity extends AtlasActivity {
     public void setCurrentLocationMarker(View view) {
         if(AtlasUtils.isLocationPermissionGranted(this)) {
             mapFragment.removeCustomInfoWindow();
-            mapFragment.setCurrentLocationMarker(R.mipmap.ic_map_marker, "Current Location", "This is my Location");
+            mapFragment.setCurrentLocationMarker(R.mipmap.ic_launcher, "Current Location", "This is my Location");
             mapFragment.zoomInToCurrentLocation(0, 10);
         }
     }
@@ -53,7 +53,7 @@ public class MainActivity extends AtlasActivity {
     public void setInfoWindow(View view) {
         if(AtlasUtils.isLocationPermissionGranted(this)) {
             mapFragment.enableCustomInfoWindow();
-            mapFragment.setCurrentLocationMarker(R.mipmap.ic_map_marker, "Current Location", "This is my Location");
+            mapFragment.setCurrentLocationMarker(R.mipmap.ic_launcher, "Current Location", "This is my Location");
             mapFragment.zoomInToCurrentLocation(0, 10);
         }
     }
