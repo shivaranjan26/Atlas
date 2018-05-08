@@ -66,7 +66,7 @@ public class MainActivity extends AtlasActivity {
 
     @Override
     public void onMarkerClicked(Marker marker) {
-        Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Clicked Marker", Toast.LENGTH_SHORT).show();
     }
 
     public void getDirections(View view) {
