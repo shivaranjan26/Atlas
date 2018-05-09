@@ -23,7 +23,7 @@ Add the dependency :
 
 dependencies {
 
-    implementation 'com.github.shivaranjan26:Atlas:8.1'
+    implementation 'com.github.shivaranjan26:Atlas:9.0'
     
 }  
 
